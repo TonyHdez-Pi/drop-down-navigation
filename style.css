@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+*{
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almostBlack: hsl(0, 0%, 8%);
+}
+/* Applying styles to the header section */
+
+.headerContainer{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerContainer__logo_menu{
+    border: 1px solid blue;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    margin: 0 1rem;
+    list-style: none;
+}
+.headerContainer__account{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    border: 1px solid green;
+}
+
+.headerContainer__account button{
+    margin-right: 1rem;
+}

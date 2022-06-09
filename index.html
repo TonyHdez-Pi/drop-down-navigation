@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
@@ -23,8 +24,8 @@
       </div>
       <nav class="menu">
         <ul>
-          <li>Features</li>
-          <li>Company</li>
+          <li id="menuItem__features">Features</li>
+          <li id="menuItem__company">Company</li>
           <li>Careers</li>
           <li>About</li>
         </ul>
@@ -39,13 +40,26 @@
     </header>
     
     <main>
-      <h1>Make remote work</h1>
-      <p>
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-
-      <button class="learnMore">Learn more</button>
+     <article class="info">
+      <section class="info__container">
+        <h1 class="bigLetters"><span>Make</span> remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+  
+        <button class="learnMore">Learn more</button>
+      </section>
+      <section class="brands"> 
+        <img src="images/client-databiz.svg" alt="client-databiz">
+        <img src="images/client-audiophile.svg" alt="client-audiophile">
+        <img src="images/client-meet.svg" alt="client-meet">
+        <img src="images/client-maker.svg" alt="client-maker">
+      </section>
+     </article>
+     <article class="images">
+       <div class="image__container"></div>
+     </article>
     </main>
   </body>
 </html>

@@ -1,6 +1,19 @@
-let dropdownItemFeatures = document.getElementById("menuItem__features");
-let dropdownItemCompany =  document.getElementById("menuItem__company");
-console.log(dropdownItemCompany);
-console.log(dropdownItemFeatures);
+const featuresButton = document.querySelector(".featuresClick");
+const featuresMenu = document.querySelector(".featuresMenu");
+const companyButton = document.querySelector(".companyClick");
+const companyMenu = document.querySelector(".companyMenu");
 
-dropdownItemCompany.addEventListener("click", );
+companyButton.addEventListener("click", ()  =>{
+    companyMenu.classList.remove("hideMenu");
+});
+// companyButton.addEventListener("click", ()  =>{
+//     companyMenu.classList.add("hideMenu");
+// });
+featuresButton.addEventListener("click", ()  =>{
+    featuresMenu.classList.remove("hideMenu");
+});
+// featuresButton.addEventListener("click", ()  =>{
+//     companyMenu.classList.add("hideMenu");
+// });
+
+console.log(2+2) 

@@ -34,14 +34,35 @@
 .menu ul li:hover{
     cursor: pointer;
 }
-.menu ul li:nth-child(-n + 2)::after{
+
+.menuItem__features:nth-child(-n + 2)::after, .menuItem__company:nth-child(-n + 2)::after{
     content: url(images/icon-arrow-down.svg);
     padding: 0 .5rem;
-}
-.menu ul li:nth-child(-n + 2):active:after{
+}/*
+#menuItem__company:nth-child(-n + 2):active::after, #menuItem__features:nth-child(-n + 2):active:after{
     content: url(images/icon-arrow-up.svg);
     padding: 0 .5rem;
+} */
+/* Start of dropdown menu */
+.company_subMenu, .features_subMenu{
+    position: absolute;
+    width: 6.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: .3rem;
 }
+.features_subMenu li, 
+.company_subMenu li{
+    list-style: none;
+    width: 100% ;
+    padding: 3px 0;
+    margin: 0 !important;
+} 
+.hideMenu{
+    display: none !important; 
+}
+ /* End of dropdown menu */
 .headerContainer__account{
     display: flex;
     justify-content: flex-end;
@@ -110,6 +131,10 @@ main{
     border-radius: 10px;
     background-color: var(--almostBlack);
     color: var(--almostWhite);
+    border: none;
+}
+.learnMore:hover{
+    background-color: hsl(0, 0%, 15%);
 }
 .brands img{
     margin: 0 2rem;

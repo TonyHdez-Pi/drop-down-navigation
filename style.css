@@ -35,7 +35,7 @@
     cursor: pointer;
 }
 
-.menuItem__features:nth-child(-n + 2)::after, .menuItem__company:nth-child(-n + 2)::after{
+.menuItem:nth-child(-n + 2)::after{
     content: url(images/icon-arrow-down.svg);
     padding: 0 .5rem;
 }/*
@@ -44,7 +44,7 @@
     padding: 0 .5rem;
 } */
 /* Start of dropdown menu */
-.company_subMenu, .features_subMenu{
+.subMenu{
     position: absolute;
     width: 6.5%;
     display: flex;
@@ -52,16 +52,16 @@
     padding: 0;
     padding-top: .3rem;
 }
-.features_subMenu li, 
-.company_subMenu li{
+.subMenu li{
     list-style: none;
     width: 100% ;
     padding: 3px 0;
     margin: 0 !important;
+    display: block;
 } 
-.hideMenu{
+.hide{
     display: none !important; 
-}
+} 
  /* End of dropdown menu */
 .headerContainer__account{
     display: flex;

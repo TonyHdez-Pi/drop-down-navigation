@@ -19,3 +19,12 @@ function showHideMenu(num){
     }
   });
 }
+// script for the mobile menu
+
+
+
+
+
+
+
+
